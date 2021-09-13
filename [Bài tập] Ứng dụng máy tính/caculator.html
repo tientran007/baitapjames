@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table >
+        <tr>
+            <td colspan="2">
+                <input id="number1" type="text">
+            </td>
+            <td colspan="2">
+                <input id="number2" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="add()">Addition(+)</button></td>
+            <td><button onclick="sub()">Subtraction(-)</button></td>
+            <td><button onclick="mul()">Multiplication(X)</button></td>
+            <td><button onclick="di()">Division(/)</button></td>
+        </tr>
+        <tr style="color: red;">
+            <br>
+            <td>Result:</td>
+            <td>
+                <div id="result"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function add() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a + b;
+        document.getElementById('result').innerHTML = c;
+    }
+
+    function sub() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a - b;
+        document.getElementById('result').innerHTML = c;
+    }
+
+    function mul() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a * b;
+        document.getElementById('result').innerHTML = c;
+    }
+
+    function di() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a / b;
+        document.getElementById('result').innerHTML = c;
+    }
+</script>
+
+</html>
