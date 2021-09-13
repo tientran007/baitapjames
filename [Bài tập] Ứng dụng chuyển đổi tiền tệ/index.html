@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" id="inputmoney">
+                </td>
+                <td style="width: 200px;">
+                    <select style="width: 200px;">
+                        <option value="0">Viet Nam</option>
+                
+                    </select>
+                </td>
+                <td style="width: 200px;">
+                    <select style="width: 200px;" id="tocuren">
+                        <option value="1">Viet Nam</option>
+                        <option value="23000">USD</option>
+                        <option value="26870">EUR</option>
+                    </select>
+                </td>
+                <td>
+                    <button onclick="convert()" style="width: 150px;">Convert</button>
+                </td>
+            </tr>
+            <tr style="color: blue;">
+                <td>Result:</td>
+                <td><div id="ketqua"></div></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="convert.js"></script>
+
+</html>
