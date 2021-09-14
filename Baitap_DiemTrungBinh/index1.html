@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let dtb = Number(prompt('Nhập vào điểm trung bình: '));
+    if (dtb > 10 || dtb < 0) {
+        alert('Điểm bạn nhập không hợp lệ! Vui lòng nhập giá trị từ 1 - 10');
+    } else {
+        if (dtb >= 9) {
+            alert("Xếp loại học sinh: Xuất sắc");
+        } else {
+            if (dtb >= 8) {
+                alert("Xếp  loại học sinh: Giỏi");
+            } else {
+                if (dtb >= 7) {
+                    alert("Xếp loại học sinh: Khá");
+                } else {
+                    if (dtb >= 6) {
+                        alert("Xếp loại học sinh: TB Khá");
+                    } else {
+                        if (dtb >= 5) {
+                            alert("Xếp loại học sinh: Trung Bình");
+                        } else {
+                            alert("Xếp loại học sinh: Yếu");
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+</script>
+
+</html>
