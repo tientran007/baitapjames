@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        .fullcalulator {
+            margin-left: 550px;
+            margin-top: 100px;
+            background-color: white;
+            width: 251.9999px;
+        }
+
+        table {
+            border: black 5px solid;
+        }
+
+        input {
+            width: 230px;
+            height: 35px;
+            border: gray 1px solid;
+            margin-top: 10px;
+            font-size: 25px;
+            text-align: right;
+            color: blue;
+            font-weight: 500;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            color: blue;
+            margin: 8px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fullcalulator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input id="show" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="num1()">1</button>
+                    <button onclick="num2()">2</button>
+                    <button onclick="num3()">3</button>
+                    <button onclick="sum()">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="num4()">4</button>
+                    <button onclick="num5()">5</button>
+                    <button onclick="num6()">6</button>
+                    <button onclick="sub()">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="num7()">7</button>
+                    <button onclick="num8()">8</button>
+                    <button onclick="num9()">9</button>
+                    <button onclick="mul()">X</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="reset()">C</button>
+                    <button onclick="num0()">0</button>
+                    <button onclick="result()">=</button>
+                    <button onclick="divi()">/</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+<script>
+    function num1() {
+        let num = 1;
+        document.getElementById("show").value = num;
+    }
+    function num2() {
+        let num = 2;
+        document.getElementById("show").value = num;
+    }
+    function num3() {
+        let num = 3;
+        document.getElementById("show").value = num;
+    }
+    function num4() {
+        let num = 4;
+        document.getElementById("show").value = num;
+    }
+    function num5() {
+        let num = 5;
+        document.getElementById("show").value = num;
+    }
+    function num6() {
+        let num = 6;
+        document.getElementById("show").value = num;
+    }
+    function num7() {
+        let num = 7;
+        document.getElementById("show").value = num;
+    }
+    function num8() {
+        let num = 8;
+        document.getElementById("show").value = num;
+    }
+    function num9() {
+        let num = 9;
+        document.getElementById("show").value = num;
+    }
+    function num0() {
+        let num = 0;
+        document.getElementById("show").value = num;
+    }
+    function sum() {
+        let a = document.getElementById("show").value;
+        let b = document.getElementById("show").value;
+        console.log(a,b);
+       
+    }
+</script>
+
+</html>

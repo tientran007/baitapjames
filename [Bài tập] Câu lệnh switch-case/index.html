@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính ngày Program</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="thang" type="text" placeholder="Nhập tháng cần tính">
+            </td>
+            <td> <button onclick="tinhngay()">Tính số ngày</button></td>
+        </tr>
+        <tr>
+            <td>
+                <div id="ketqua"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+
+    function tinhngay() {
+        let thang = document.getElementById("thang").value;
+        let thangs = parseInt(thang)
+        let ngay;
+        switch (thangs) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                ngay = 31;
+                document.write("Tháng" + "&nbsp" + thang + '&nbsp' + "có" + '&nbsp' + ngay + '&nbsp' + "ngày");                
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                ngay = 30;
+                document.write("Tháng" + "&nbsp" + thang + '&nbsp' + "có" + '&nbsp' + ngay + '&nbsp' + "ngày");
+                break;
+            case 2:
+                ngay = 29;
+                document.write("Tháng" + "&nbsp" + thang + '&nbsp' + "có" + '&nbsp' + ngay + '&nbsp' + "ngày");                
+                break;
+            default:
+                alert("Tháng bạn nhập không hợp lệ vui lòng nhập lại!")    
+        }
+    }
+</script>
+
+</html>
