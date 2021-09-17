@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let revenue = Number(prompt('Nhập vào doanh thu: '));
+        let percent;
+        if (revenue <= 1000000) {
+            percent = 1;
+            let commission = revenue / 100 * percent;
+            document.write(`Hoa hồng nhận được là: ${commission} VNĐ`);
+        } else {
+            if (revenue <= 5000000) {
+                percent = 2;
+                let commission = revenue / 100 * percent;
+                document.write(`Hoa hồng nhận được là: ${commission} VNĐ`);
+            } else {
+                if (revenue <= 10000000) {
+                    percent = 3;
+                    let commission = revenue / 100 * percent;
+                    document.write(`Hoa hồng nhận được là: ${commission} VNĐ`);
+                } else {
+                    if (revenue <= 50000000) {
+                        percent = 4;
+                        let commission = revenue / 100 * percent;
+                        document.write(`Hoa hồng nhận được là: ${commission} VNĐ`);
+                    } else {
+                        if (revenue > 50000000) {
+                            percent = 5;
+                            let commission = revenue / 100 * percent;
+                            document.write(`Hoa hồng nhận được là: ${commission} VNĐ`);
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

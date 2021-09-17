@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <h5>Chuương trình xếp loại học sinh</h5>
+        <tr>
+            <td><input type="text" name="" id="diem"></td>
+        </tr>
+        <tr>
+            <td><button onclick="rank()">Xếp loại</button></td>
+        </tr>
+        <tr>
+            <td id="result"></td>
+        </tr>
+    </table>
+</body>
+<script>
+   function rank(){
+    let dtb = getElementById("diem").value;
+    (dtb > 10 || dtb < 0 ) ? document.write("Lỗi") 
+    : (dtb >= 9) ? document.write("Xuat sac") 
+    : (dtb >= 8) ? document.write("Tot") 
+    : (dtb >= 7) ? document.write("kha") 
+    : (dtb >= 6) ? document.write("Trung binh kha")
+    : (dtb >= 5) ? document.write('Trung binh') 
+    : document.write("Yếu");
+   }
+</script>
+</html>
