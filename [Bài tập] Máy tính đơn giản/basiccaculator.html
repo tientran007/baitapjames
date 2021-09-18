@@ -8,40 +8,58 @@
     <title>Document</title>
     <style>
         body {
-            background-color: cadetblue;
+            background-color: #4B3869;
         }
 
         .fullcalulator {
             margin-left: 550px;
             margin-top: 100px;
             background-color: white;
-            width: 251.9999px;
+            width: 282px;
+            border: white 5px solid;
+            border-radius: 10px;
             
         }
 
-        table {
-            border: black 5px solid;
-        
-        }
-
         input {
-            width: 230px;
-            height: 35px;
+            width: 270px;
+            height: 40px;
             border: gray 1px solid;
             margin-top: 10px;
             font-size: 25px;
             text-align: right;
             color: blue;
             font-weight: 500;
+            font-weight: 600;
+            border-radius: 3px;
         }
 
         button {
-            width: 40px;
-            height: 40px;
-            color: blue;
+            width: 50px;
+            height: 50px;
+            color: white;
             margin: 8px;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 20px;
+            background-color: #63B4B8;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #407f83 ;
+        }
+        button:active {
+             background-color: #1c4547;
+
+        }
+        footer {
+            text-align: center;
+            margin-left: 555px;
+            font-size: 25px;
+            background-color: coral;
+            width: 287px;
+            color: white;
+            border-radius: 3px;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -51,7 +69,7 @@
         <table>
             <tr>
                 <td colspan="4">
-                    <input id="show" type="text">
+                    <input id="show" type="text" disabled>
                 </td>
             </tr>
             <tr>
@@ -88,30 +106,39 @@
                     <button onclick="divi()">/</button>
                 </td>
             </tr>
-
         </table>
     </div>
+    <footer>
+        <div><h5>Develop By Tien Tran</h5></div>
+    </footer>
 </body>
 <script>
+     function login() {
+         let pass = prompt("Nhập mật khẩu để sử dụng máy tính");
+         while (pass !== "0000") {
+             pass = prompt("Mật khẩu sai, vui lòng nhập lại, Nếu không biết thì hỏi Tiến!")
+         }
+     }
+     login();
     function num1() {
         let num = 1;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num2() {
         let num = 2;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num3() {
         let num = 3;
-        document.getElementById("show").value =  document.getElementById("show").value  + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num4() {
         let num = 4;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num5() {
         let num = 5;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num6() {
         let num = 6;
@@ -119,24 +146,51 @@
     }
     function num7() {
         let num = 7;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num8() {
         let num = 8;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num9() {
         let num = 9;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function num0() {
         let num = 0;
-        document.getElementById("show").value =  document.getElementById("show").value + num ;
+        document.getElementById("show").value =  document.getElementById("show").value + num;
     }
     function sum() {
-        var a = document.getElementById("show").value;
-        document.getElementById("show").value = " ";
+        var data = document.getElementById("show").value;
+        var sum = "+";
+        document.getElementById("show").value =  document.getElementById("show").value + sum;
     }
+    function sub() {
+        var data = document.getElementById("show").value;
+        var sub = "-";
+        document.getElementById("show").value =  document.getElementById("show").value + sub;
+    }
+    function mul() {
+        var data = document.getElementById("show").value;
+        var mul = "*";
+        document.getElementById("show").value =  document.getElementById("show").value + mul;
+    }
+    function divi() {
+        var data = document.getElementById("show").value;
+        var divi = "/";
+        document.getElementById("show").value =  document.getElementById("show").value + divi;
+    }
+    function result() {
+      let result = (eval(document.getElementById('show').value));
+      document.getElementById("show").value = result;  
+      if (document.getElementById('show').value == "1707") {
+            document.body.style.backgroundImage = "url('image/background.jpg')";
+        };      
+    }
+    function reset() {
+        document.getElementById('show').value = " ";
+    }
+
 </script>
 
 </html>
