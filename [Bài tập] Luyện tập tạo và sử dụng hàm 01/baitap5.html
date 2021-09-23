@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=56, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+     <div id="result"></div>
+    <script> 
+     let inputdata = prompt("Enter Star Name:") 
+          function constellation(data) {
+            let starName = ["Polaris", "Aldebaran", 'Deneb', "Vega", 'Altair', 'Dubhe','Regulus'];
+            let Constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+            let index = starName.indexOf(data);
+            if (index == -1) {
+                document.getElementById("result").innerHTML = `<br> No data found`;
+            } else {
+                document.getElementById("result").innerHTML = `<br> ${Constellation[index]}`;
+            }
+        };
+        constellation(inputdata);
+    </script>
+</body>
+</html>

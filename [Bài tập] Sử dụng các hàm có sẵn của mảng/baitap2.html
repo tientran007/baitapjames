@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numberArrays = [158457861];
+        const numberArray = numberArrays.toString();
+        const result = [numberArray[0]];
+        for (let i = 0; i < numberArray.length; i++) {
+            if (numberArray[i - 1] % 2 === 0 && numberArray[i] % 2 === 0) {
+                result.push("-", numberArray[i]);
+            } else {
+                result.push(numberArray[i]);
+            }
+        }
+        document.write(result.join(" "))
+    </script>
+</body>
+
+</html>

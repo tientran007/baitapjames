@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [];
+        let min = 10;
+        let max = 90;
+        let i = 0;
+        let total = 0;
+        let size = 20;
+        let count = 0;
+        let quantityEven = 0;44
+        let totalOdd = 0;
+        for (; i < size; i++) {
+            numbers[i] = Math.floor(Math.random() * (max - min + 1) + min)
+            document.write(`${numbers[i]}, `);
+        };
+        document.write("<br>");
+        document.write("Cac so nguyen to: ")
+        for (let i =0 ; i < size; i++) {
+            for (let j = 2; j < numbers[i] - 1; j++) {
+                if (numbers[i] % j == 0) {
+                    count = count + 1;
+                };
+            };
+            if (count == 0) {
+                document.write(`${numbers[i]}, `);
+            };
+            count = 0;
+        };
+        
+         document.write("<br>")
+         for (let i = 0; i < size; i++) {
+             if ( numbers[i] % 2 == 0 ) {
+                quantityEven ++;
+             };
+         };
+         document.write(`Total Even Number: ${quantityEven}`);
+         for (let i = 0; i < size; i++) {
+          if ( numbers[i] % 2 !== 0 ) {
+              totalOdd += numbers[i];
+          };
+        };
+        document.write("<br>");
+        document.write(`Total Odd : ${totalOdd}`);
+         
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #resultvn, tr{
+            border: black solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="data" type="text" placeholder="Nhập từ cần dịch">
+        <button onclick="translates()">Dịch</button>
+        <div id="result"></div>
+
+    </div>
+    <script>
+        function translates() {
+            let english = ["flower", "chair", 'table', "car", 'bike', 'cat', 'dog', 'girl'];
+            let vietnamese = ["Hoa", "Ghế", "Bàn", "Ôtô", "Xe đạp", "Con mèo", "Con Chó", 'Cô gái'];
+            let data = document.getElementById("data").value;
+            let indexvn = english.indexOf(data);
+            if (indexvn == -1) {
+                document.getElementById("result").innerHTML = `<br> Từ bạn cần dịch không tồn tại`;
+            } else {
+                document
+                document.getElementById("result").innerHTML = `<br> ${vietnamese[indexvn]}`;
+            }
+        };
+
+    </script>
+</body>
+
+</html>
