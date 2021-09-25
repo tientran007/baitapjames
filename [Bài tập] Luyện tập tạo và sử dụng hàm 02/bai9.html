@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkIndexArray(arr,str) {
+            let count = 0;
+            index = arr.indexOf(str);
+            if(index !== -1) {
+               for(let i = 0; i < arr.length; i++) {
+                   if(arr[i] == str) {
+                       count++;
+                   } 
+               }
+               return count;
+            } else {
+                return -1;
+            }
+        }
+        
+    </script>
+</body>
+</html>

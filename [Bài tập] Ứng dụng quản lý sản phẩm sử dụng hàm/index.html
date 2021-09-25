@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fullpage">
+        <h2>Add New Product</h2>
+        <div class="inputproduct">
+            <input type="text" placeholder="New Product" id="dataproduct">
+            <button onclick="addtoArray()">Add</button>
+        </div>
+        <h2>Display All Product</h2>
+        <div class="headerproductlist">
+            <table id="productname">
+                <tr>
+                    <td class="tdproduct"> <h4>Product Name</h4> </td>
+                    <td class="tdproduct"> <input  id="quantityproduct" type="text" value=" 0 Product" disabled ></td>
+                </tr>
+            </table>
+            <hr>
+            <div id="listproduct">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

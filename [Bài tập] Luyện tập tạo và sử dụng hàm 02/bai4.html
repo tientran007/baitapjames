@@ -8,17 +8,14 @@
 </head>
 <body>
     <script>
-        function footToMeter(foot) {
-            meter = 0.305 * foot
-            return meter; 
+        function checkNumber(str) {
+            if (str / 1 == Number(str)) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        document.write(footToMeter(20));
-        
-        function meterToFoot(meter) {
-            foot = 3.279 * meter 
-            return foot;
-        }
-        document.write(meterToFoot(20));
+        checkNumber("cat");
     </script>
 </body>
 </html>

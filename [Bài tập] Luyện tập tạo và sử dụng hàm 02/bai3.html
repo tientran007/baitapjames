@@ -8,17 +8,14 @@
 </head>
 <body>
     <script>
-        function footToMeter(foot) {
-            meter = 0.305 * foot
-            return meter; 
+        function factorial(number) {
+            let factorial = 1;
+            for(let i = 1; i <= number; i++ ) {
+                factorial = factorial * i;
+            }
+            return factorial;
         }
-        document.write(footToMeter(20));
-        
-        function meterToFoot(meter) {
-            foot = 3.279 * meter 
-            return foot;
-        }
-        document.write(meterToFoot(20));
+        factorial(5);
     </script>
 </body>
 </html>
