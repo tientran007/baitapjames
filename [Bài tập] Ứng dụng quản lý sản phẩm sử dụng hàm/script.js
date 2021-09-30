@@ -1,8 +1,4 @@
-let product = ["Iphone 13 Pro max",
-"Samsung Galaxy S21 Ultra",
-"Oppo Find 3 Pro",
-"Vivo V15",
-"Xiaomi Note 11 Pro "]; 
+let product = [];
 function start() {
 
   diplayListProduct();
@@ -10,28 +6,28 @@ function start() {
 }
 start();
 
-// function init() {
-//   if(getLocalStorage("strorageProduct") == null) {
-//     product = [
-//       "iphone 13 Pro Max",
-//       "SamSung Galaxy 21 Ultra",
-//       "Vivo C15",
-//       "Oppo K1",
-//     ];
-//     saveLocalStorage("strorageProduct",product);
+function init() {
+  if(getLocalStorage("strorageProduct") == null) {
+    product = [
+      "iphone 13 Pro Max",
+      "SamSung Galaxy 21 Ultra",
+      "Vivo C15",
+      "Oppo K1",
+    ];
+    saveLocalStorage("strorageProduct",product);
 
-//   } else {
-//     product = getLocalStorage("strorageProduct");
-//   }
-// }
+  } else {
+    product = getLocalStorage("strorageProduct");
+  }
+}
 
-// function getLocalStorage(key){
-//   return JSON.parse(window.localStorage.getItem(key));
-// }
+function getLocalStorage(key){
+  return JSON.parse(window.localStorage.getItem(key));
+}
 
-// function saveLocalStorage(key, datas){
-//   window.localStorage.setItem(key, JSON.stringify(datas));
-// }
+function saveLocalStorage(key, datas){
+  window.localStorage.setItem(key, JSON.stringify(datas));
+}
 
 // addroArray lấy dữ liệu từ ô đã nhập thêm vào đầu mảng
 function addtoArray() {
