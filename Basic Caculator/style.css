@@ -1,0 +1,107 @@
+body {
+    background-color: #4B3869;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#fullcalulator {
+    margin-left: 550px;
+    margin-top: 100px;
+    background-color: white;
+    width: 282px;
+    border: white 5px solid;
+    border-radius: 10px;
+
+}
+
+input {
+    width: 270px;
+    height: 40px;
+    border: rgb(189, 186, 186) 1px solid;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: right;
+    color: blue;
+    font-weight: 500;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #63B4B8;
+    border-radius: 50%;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #407f83;
+}
+
+button:active {
+    background-color: #1c4547;
+
+}
+
+footer {
+    text-align: center;
+    margin-left: 555px;
+    font-size: 25px;
+    background-color: coral;
+    width: 287px;
+    color: white;
+    border-radius: 3px;
+    margin-top: 0;
+}
+
+.sum {
+    background-color: rgba(224, 2, 2, 0.76);
+}
+
+.sub {
+    background-color: rgba(0, 128, 0, 0.829);
+}
+
+.mul {
+    background-color: rgba(179, 179, 0, 0.884);
+}
+
+.divi {
+    background-color: violet;
+}
+
+.sum:hover {
+    background-color: rgba(182, 2, 2, 0.753);
+}
+
+.sub:hover {
+    background-color: rgba(11, 90, 11, 0.829);
+}
+
+.mul:hover {
+    background-color: rgba(139, 137, 4, 0.884);
+}
+
+.divi:hover {
+    background-color: rgb(230, 55, 230);
+}
+
+.sum:active {
+    background-color: rgba(134, 0, 0, 0.76);
+}
+
+.sub:active {
+    background-color: rgba(1, 63, 1, 0.829);
+}
+
+.mul:active {
+    background-color: rgba(92, 92, 0, 0.884);
+}
+
+.divi:active {
+    background-color: rgb(117, 0, 117);
+}

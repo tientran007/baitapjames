@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="fullcalulator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input id="show" type="text" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="num1()">1</button>
+                    <button onclick="num2()">2</button>
+                    <button onclick="num3()">3</button>
+                    <button onclick="sum()" class="sum">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="num4()">4</button>
+                    <button onclick="num5()">5</button>
+                    <button onclick="num6()">6</button>
+                    <button onclick="sub()" class="sub">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="num7()">7</button>
+                    <button onclick="num8()">8</button>
+                    <button onclick="num9()">9</button>
+                    <button onclick="mul()" class="mul">X</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="reset()">C</button>
+                    <button onclick="num0()">0</button>
+                    <button onclick="result()">=</button>
+                    <button onclick="divi()" class="divi">/</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div>
+            <h5>Develop By Tien Tran</h5>
+        </div>
+    </footer>
+</body>
+<script src="script.js">
+</script>
+
+</html>
